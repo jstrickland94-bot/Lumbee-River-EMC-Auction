@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Car Auction</title>
-    <link rel="stylesheet" href="/static/style.css">
-</head>
-<body>
-    <header>
-        <h1>Company Car Auction</h1>
-        <p>Welcome! Post and bid on vehicles below.</p>
-    </header>
-    <main>
-        <section>
-            <h2>Available Vehicles</h2>
-            <p>No listings yet — admin can add items soon.</p>
-        </section>
-    </main>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Available Vehicles - Company Auctions{% endblock %}
+{% block content %}
+  <h1 class="mb-3">Vehicles</h1>
+  <div class="alert alert-info">No vehicles yet. Admin can add listings from the Admin page.</div>
+{% endblock %}
